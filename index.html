@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DealFlow CRM — Lightweight Sales Pipeline</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div>
+      <h1>DealFlow CRM</h1>
+      <p>Lightweight Sales Pipeline & Lead Tracker</p>
+    </div>
+    <div class="header-actions">
+      <input id="searchInput" type="search" placeholder="Search leads or contacts..." />
+      <button class="btn secondary" id="exportCsvBtn">Export CSV</button>
+    </div>
+  </header>
+
+  <section class="kpis" id="kpiRow"></section>
+
+  <section class="add-bar">
+    <form id="dealForm">
+      <input id="dealTitle" type="text" placeholder="Deal / Vehicle / Client name" required />
+      <input id="dealOwner" type="text" placeholder="Contact / Phone" required />
+      <input id="dealValue" type="number" min="0" step="100" placeholder="Value ($)" required />
+      <select id="dealStage">
+        <option value="New Lead">New Lead</option>
+        <option value="Follow-Up">Follow-Up</option>
+        <option value="Negotiation">Negotiation</option>
+        <option value="Closed Won">Closed Won</option>
+      </select>
+      <button class="btn primary" type="submit">+ Add Deal</button>
+    </form>
+  </section>
+
+  <main class="board" id="board"></main>
+  <script src="app.js"></script>
+</body>
+</html>

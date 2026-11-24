@@ -1,0 +1,27 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, sans-serif; }
+body { background: #f8fafc; color: #0f172a; padding: 24px; }
+.header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 20px; }
+.header h1 { font-size: 24px; }
+.header p { color: #64748b; font-size: 13px; }
+.header-actions { display: flex; gap: 10px; }
+.header-actions input { padding: 9px 12px; border: 1px solid #cbd5e1; border-radius: 8px; min-width: 220px; }
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-bottom: 18px; }
+.kpi { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 14px 16px; }
+.kpi span { font-size: 12px; color: #64748b; display: block; margin-bottom: 4px; }
+.kpi strong { font-size: 22px; color: #0f172a; }
+.add-bar { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 14px; margin-bottom: 20px; }
+#dealForm { display: flex; flex-wrap: wrap; gap: 10px; }
+#dealForm input, #dealForm select { flex: 1; min-width: 150px; padding: 9px 12px; border: 1px solid #cbd5e1; border-radius: 8px; }
+.btn { border: none; border-radius: 8px; padding: 9px 16px; font-weight: 600; cursor: pointer; }
+.btn.primary { background: #2563eb; color: #fff; }
+.btn.secondary { background: #0f172a; color: #fff; }
+.board { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 14px; }
+.col { background: #f1f5f9; border-radius: 12px; padding: 12px; min-height: 360px; }
+.col-head { display: flex; justify-content: space-between; font-size: 13px; font-weight: 700; margin-bottom: 10px; color: #334155; }
+.card { background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 12px; margin-bottom: 10px; box-shadow: 0 1px 2px rgba(0,0,0,0.04); }
+.card h3 { font-size: 14px; margin-bottom: 4px; }
+.card .meta { font-size: 12px; color: #64748b; margin-bottom: 8px; }
+.card .val { font-size: 15px; font-weight: 700; color: #059669; margin-bottom: 10px; }
+.card-actions { display: flex; gap: 6px; flex-wrap: wrap; }
+.chip-btn { border: 1px solid #cbd5e1; background: #fff; border-radius: 6px; padding: 4px 8px; font-size: 11px; cursor: pointer; }
+.chip-btn.danger { color: #dc2626; border-color: #fecaca; }
